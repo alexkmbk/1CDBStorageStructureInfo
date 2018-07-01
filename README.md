@@ -1,4 +1,5 @@
 # 1CDBStorageStructureInfo
+![alt tag](https://github.com/alexkmbk/1CDBStorageStructureInfo/tree/master/Screenshot.png)
 Фичи:
 - Поиск выполняется по всей строке, а не по точному соответствию.
 
