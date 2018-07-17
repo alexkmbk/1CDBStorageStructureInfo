@@ -1,6 +1,5 @@
 # 1CDBStorageStructureInfo
 ![alt tag](https://github.com/alexkmbk/1CDBStorageStructureInfo/blob/master/Screenshot_en.png)
-![alt tag](https://github.com/alexkmbk/1CDBStorageStructureInfo/blob/master/Screenshot.png)
 
 Features:
 - Full text search.
@@ -12,6 +11,9 @@ Features:
 - Support both English and Russian main script for configurations.
 
 - Support two  languages for user interfase : English and Russian.
+
+
+![alt tag](https://github.com/alexkmbk/1CDBStorageStructureInfo/blob/master/Screenshot.png)
 
 
 Фичи:
