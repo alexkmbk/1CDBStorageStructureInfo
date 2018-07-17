@@ -16,6 +16,7 @@ The functionality  is based on the built-in platform function GetDBStorageStruct
 
 ![alt tag](https://github.com/alexkmbk/1CDBStorageStructureInfo/blob/master/Screenshot.png)
 
+Обработка для платформы 1С: Предприятие, предназначена для поиска соответствий между именами метаданных конфигурации и именами полей и таблиц в базе данных.
 
 Фичи:
 - Поиск выполняется по всей строке, а не по точному соответствию.
