@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<CommandBarLocation>None</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -43,6 +44,7 @@
 						<InputField name="ИмяТаблицыХранения" id="1">
 							<DataPath>ИмяТаблицыХранения</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<Width>60</Width>
 							<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 							<ContextMenu name="ИмяТаблицыХраненияКонтекстноеМеню" id="2"/>
 							<ExtendedTooltip name="ИмяТаблицыХраненияExtendedTooltip" id="86"/>
@@ -51,11 +53,16 @@
 							</Events>
 						</InputField>
 						<LabelDecoration name="Декорация2" id="13">
+							<Width>61</Width>
 							<TextColor>style:FieldSelectionBackColor</TextColor>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Например: Номенклатура или REFERENCE106 (регистр букв не имеет значения)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>For example: Items or REFERENCE106 (the letter case does not matter)</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="Декорация2КонтекстноеМеню" id="14"/>
@@ -125,18 +132,48 @@
 				</InputField>
 				<InputField name="РезультатМетаданные" id="23">
 					<DataPath>Результат.Метаданные</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Metadata</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метаданные</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="РезультатМетаданныеКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="РезультатМетаданныеExtendedTooltip" id="91"/>
 				</InputField>
 				<InputField name="РезультатНазначение" id="26">
 					<DataPath>Результат.Назначение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Purpose</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="РезультатНазначениеКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="РезультатНазначениеExtendedTooltip" id="92"/>
 				</InputField>
 				<InputField name="РезультатИмяТаблицыХранения" id="29">
 					<DataPath>Результат.ИмяТаблицыХранения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Storage table name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя таблицы хранения</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="РезультатИмяТаблицыХраненияКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="РезультатИмяТаблицыХраненияExtendedTooltip" id="93"/>
@@ -158,6 +195,10 @@
 					<EnableDrag>true</EnableDrag>
 					<DataPath>Поля</DataPath>
 					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Fields</v8:content>
+						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Поля</v8:content>
@@ -239,6 +280,10 @@
 							<DataPath>Индексы</DataPath>
 							<Title>
 								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Indexes</v8:content>
+								</v8:item>
+								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Индексы</v8:content>
 								</v8:item>
@@ -284,14 +329,18 @@
 									<ContextMenu name="ИндексыИмяИндексаХраненияКонтекстноеМеню" id="63"/>
 									<ExtendedTooltip name="ИндексыИмяИндексаХраненияExtendedTooltip" id="102"/>
 								</InputField>
-								<InputField name="ИндексыПоля" id="65">
-									<DataPath>Индексы.ИмяПоля</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ИндексыПоляКонтекстноеМеню" id="66"/>
-									<ExtendedTooltip name="ИндексыПоляExtendedTooltip" id="103"/>
-								</InputField>
 								<InputField name="ИндексыИмяТаблицы" id="75">
 									<DataPath>Индексы.ИмяТаблицы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Main table name</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя основной таблицы</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ИндексыИмяТаблицыКонтекстноеМеню" id="76"/>
 									<ExtendedTooltip name="ИндексыИмяТаблицыExtendedTooltip" id="104"/>
@@ -307,6 +356,10 @@
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ПоляИндексов</DataPath>
 							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Index fields</v8:content>
+								</v8:item>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Поля индексов</v8:content>
@@ -434,6 +487,10 @@
 				<Column name="ИмяТаблицы" id="1">
 					<Title>
 						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Table name</v8:content>
+						</v8:item>
+						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя таблицы</v8:content>
 						</v8:item>
@@ -448,6 +505,10 @@
 				</Column>
 				<Column name="Метаданные" id="2">
 					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Metadata</v8:content>
+						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Метаданные</v8:content>
@@ -507,6 +568,10 @@
 				<Column name="ИмяПоляХранения" id="1">
 					<Title>
 						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Storage field name</v8:content>
+						</v8:item>
+						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя поля хранения</v8:content>
 						</v8:item>
@@ -521,6 +586,10 @@
 				</Column>
 				<Column name="ИмяПоля" id="2">
 					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Field name</v8:content>
+						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя поля</v8:content>
@@ -537,6 +606,10 @@
 				<Column name="Метаданные" id="3">
 					<Title>
 						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Metadata</v8:content>
+						</v8:item>
+						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Метаданные</v8:content>
 						</v8:item>
@@ -551,6 +624,10 @@
 				</Column>
 				<Column name="ИмяТаблицы" id="4">
 					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Table name</v8:content>
+						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя таблицы</v8:content>
@@ -580,23 +657,12 @@
 				<Column name="ИмяИндексаХранения" id="1">
 					<Title>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Имя индекса хранения</v8:content>
+							<v8:lang>en</v8:lang>
+							<v8:content>Index name</v8:content>
 						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-				<Column name="ИмяПоля" id="2">
-					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имя поля</v8:content>
+							<v8:content>Имя индекса</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -638,6 +704,10 @@
 				<Column name="ИмяПоляХранения" id="1">
 					<Title>
 						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Storage field name</v8:content>
+						</v8:item>
+						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя поля хранения</v8:content>
 						</v8:item>
@@ -652,6 +722,10 @@
 				</Column>
 				<Column name="ИмяПоля" id="2">
 					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Field name</v8:content>
+						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя поля</v8:content>
@@ -668,6 +742,10 @@
 				<Column name="Метаданные" id="3">
 					<Title>
 						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Metadata</v8:content>
+						</v8:item>
+						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Метаданные</v8:content>
 						</v8:item>
@@ -682,6 +760,10 @@
 				</Column>
 				<Column name="ИмяИндексаХранения" id="4">
 					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Storage index name</v8:content>
+						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя индекса хранения</v8:content>
@@ -716,6 +798,10 @@
 	<Commands>
 		<Command name="УстановитьОтбор" id="1">
 			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set filter</v8:content>
+				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Установить отбор</v8:content>
