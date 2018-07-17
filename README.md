@@ -12,7 +12,7 @@ Features:
 
 - Support two  languages for user interfase : English and Russian.
 
-The functionality  is base on the built-in platform function GetDBStorageStructureInfo()
+The functionality  is based on the built-in platform function GetDBStorageStructureInfo()
 
 ![alt tag](https://github.com/alexkmbk/1CDBStorageStructureInfo/blob/master/Screenshot.png)
 
