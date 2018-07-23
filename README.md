@@ -2,7 +2,7 @@
 ![alt tag](https://github.com/alexkmbk/1CDBStorageStructureInfo/blob/master/Screenshot_en.png)
 
 Features:
-- Full text search.
+- Full text and exact match search.
 
 - Search in both directions, for example, you can search by "REFERENCE106" word, and by "Item" as well.
 
@@ -10,7 +10,7 @@ Features:
 
 - Support both English and Russian main script for configurations.
 
-- Support two  languages for user interfase : English and Russian.
+- Support two languages for user interfase : English and Russian.
 
 The functionality  is based on the built-in platform function GetDBStorageStructureInfo()
 
@@ -19,7 +19,7 @@ The functionality  is based on the built-in platform function GetDBStorageStruct
 Обработка для платформы 1С: Предприятие, предназначена для поиска соответствий между именами метаданных конфигурации и именами полей и таблиц в базе данных.
 
 Фичи:
-- Поиск выполняется по всей строке, а не по точному соответствию.
+- Поиск выполняется как по всей строке так и по точному соответствию.
 
 - Поиск осуществляется в обе стороны, то есть можно искать по слову, скажем "REFERENCE106", а можно по слову "Номенклатура".
 
