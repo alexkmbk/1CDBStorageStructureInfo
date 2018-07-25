@@ -10,7 +10,7 @@ Features:
 
 - Support both English and Russian main script for configurations.
 
-- Support two languages for user interfase : English and Russian.
+- Support two languages for user interface : English and Russian.
 
 The functionality  is based on the built-in platform function GetDBStorageStructureInfo()
 
